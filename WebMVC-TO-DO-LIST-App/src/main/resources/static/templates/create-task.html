@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="/task/create" method="post">
+    <input type="text" name="taskName" placeholder="Task Name" required />
+    <input type="date" name="date" required />
+    <input type="time" name="time" required />
+    <button type="submit">Create Task</button>
+</form>
+
+
+</body>
+</html>

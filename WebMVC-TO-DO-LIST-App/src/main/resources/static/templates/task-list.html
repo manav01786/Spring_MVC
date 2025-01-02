@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Your Tasks</h1>
+<ul>
+    <li th:each="task : ${tasks}">
+        [[${task.taskName}]] - [[${task.date}]] [[${task.time}]]
+    </li>
+</ul>
+<a href="/task/create">Add Task</a>
+<a href="/user/logout">Logout</a>
+
+
+</body>
+</html>
